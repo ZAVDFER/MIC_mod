@@ -199,9 +199,24 @@ publishing {
     repositories {
         maven {
             url "file://${project.projectDir}/mcmodsrepo"
+            maven {
+                url "https://maven.minecraftforge.net/"
+            }
+            // Для MineColonies
+            maven {
+                url "https://ldtteam.jfrog.io/artifactory/mods/"
+            }
+            // Для Create и аддонов
+            maven {
+                url "https://maven.tterrag.com/"
+            }
+            // Если мод доступен через JitPack (например, Create Metallurgy)
+            maven {
+                url "https://jitpack.io"
+            }
+        }
         }
     }
-}
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
