@@ -18,7 +18,7 @@ public class ModBloks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MICMod.MOD_ID);
 
-    public static final RegistryObject<Block> Metallurgical_plant_BLOCK = registerBlock("Metallurgical_plant",
+    public static final RegistryObject<Block> metallurgical_plant = registerBlock("metallurgical_plant",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK )));
 
 
